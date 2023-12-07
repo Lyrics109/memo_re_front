@@ -1,4 +1,4 @@
-# memo_re_front
+# board
 
 ## Project setup
 ```
