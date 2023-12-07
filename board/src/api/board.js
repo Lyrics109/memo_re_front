@@ -11,4 +11,11 @@ export default {
     console.log(page);
     return axios.get(BASE_URL + `api/books`);
   },
+  postArticle: function (userId, title, content) {
+    return axios.post(BASE_URL + "posts", {
+      userId: userId,
+      title: title,
+      content: content,
+    });
+  },
 };
