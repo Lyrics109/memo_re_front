@@ -18,4 +18,10 @@ export default {
       content: content,
     });
   },
+  patchArticle: function (id, title, content) {
+    return axios.patch(BASE_URL + `posts/${id}`, {
+        title: title,
+        content: content,
+    });
+},
 };
